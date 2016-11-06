@@ -3,6 +3,11 @@
 # Based on Ubuntu 14.04
 # Build with:
 #   sudo docker build -t poretools .
+# Based on Original Dockerfile from 
+# Stephen Turner. Source Dockerfile from 
+# genomicpariscentre/poretools:0.6.0
+# edited by Christopher E. Carr 
+# <chrisc at mit dot edu>
 ###############################################
 
 # Use ubuntu 14.04 base image
@@ -28,7 +33,7 @@ RUN pip install numexpr --upgrade
 RUN Rscript -e 'options("repos" = c(CRAN = "http://cran.rstudio.com/")); install.packages("codetools"); install.packages("MASS"); install.packages("ggplot2")'
 
 # Install poretools
-RUN git clone https://github.com/arq5x/poretools /tmp/poretools
+RUN git clone https://github.com/CarrCE/poretools /tmp/poretools
 RUN cd /tmp/poretools && python setup.py install
 
 ############## INSTALLATION END ##############
