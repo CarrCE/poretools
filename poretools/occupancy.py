@@ -1,9 +1,11 @@
-import Fast5File
-from collections import Counter
 import sys
+from collections import Counter
 import pandas as pd
-import seaborn as sns
+import matplotlib
+matplotlib.use('Agg')
 from matplotlib import pyplot as plt
+import seaborn as sns
+import Fast5File
 
 import logging
 logger = logging.getLogger('poretools')
