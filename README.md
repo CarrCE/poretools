@@ -18,3 +18,8 @@ Contributors
 @arq5x
 @nickloman
 @brentp
+
+Edit History
+============
+@carrce 2016/11/06 Edited to fix bugs related to matplotlib while executing within a docker container.
+
