@@ -29,6 +29,9 @@ RUN apt-get -y install git python-tables python-setuptools python-pip python-dev
 # Upgrade numexpr
 RUN pip install numexpr --upgrade
 
+# Upgrade six
+RUN pip install --upgrade six
+
 # Install R packages
 RUN Rscript -e 'options("repos" = c(CRAN = "http://cran.rstudio.com/")); install.packages("codetools"); install.packages("MASS"); install.packages("ggplot2")'
 
