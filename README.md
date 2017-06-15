@@ -22,4 +22,4 @@ Contributors
 Edit History
 ============
 @carrce 2016/11/06 Edited to fix bugs related to matplotlib while executing within a docker container.
-
+@carrce 2017/06/15 Rebased to incorporate changes made to arq5x/poretools
